@@ -1,0 +1,135 @@
+.bg-blur {
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  filter: blur(5px);
+  position: fixed;
+  display: block;
+  transform: scale(1.03);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.content {
+      z-index: 9999;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      overflow: hidden;
+      transition: 0.5s;
+      visibility: visible;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+} 
+.block {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #ffffff;
+  transition:box-shadow 0s;
+  max-width: 400px;
+  overflow: hidden;
+  max-height: 450px;
+  border-radius: 10px;
+  transform: scale(1.03);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 70px #111;
+  
+  .text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #navmenu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  #settings {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+#nav ul.sub-nav {
+    display: none;
+}
+
+#nav ul.visible {
+    display: block;
+    list-style: none;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+}
+// Unit Toggle
+.Weather__main-toggle {
+    margin: 0 0 0 16px;
+    & > span {
+        font-size: 1.2rem;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 6px;
+            height: 3px;
+            width: 3px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+        &:last-child {
+            margin-left: 11px;
+        }
+    }
+// Toggle Switch
+    button {
+      background: #6bbf6b;
+      border: none;
+      border-radius: 30px;
+      outline: none;
+      width: 45px;
+      height: 20px;
+      margin: 5px 5px 0;
+      cursor: pointer;
+      position: relative;
+      transition: background .2s;
+      &:active {
+        background: #67b567;
+      }
+      #unit-toggle {
+        position: absolute;
+        display: inline-block;
+        left: 3px;
+        top: 2px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        transition: left .2s;
+        &.toggle {
+          left: 27px;
+        }
+      }
+    }
+  }
+}
